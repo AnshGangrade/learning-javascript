@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
+
+* {
+    font-family: "Cascadia Mono", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4fb;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(39, 39, 53);
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgb(195, 195, 233);
+    background: white;
+    width: 350px;
+    padding: 20px;
+}
+h1{
+    color: rgb(127, 127, 234);
+    text-align: center;
+    margin-bottom: 20px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(39, 39, 53);
+    border-radius: 5px;
+}
+select{
+    padding: 10px;
+    margin-bottom: 08px;
+    border: 1px solid rgb(39, 39, 53);
+    border-radius: 5px;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+.output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.output h3 {
+    margin-bottom: 08px;  /* needed to make it center with select(it also has a margin) */
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(127, 127, 234);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#result{
+    color: rgb(39, 39, 53);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
