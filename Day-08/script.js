@@ -47,3 +47,50 @@ const person2 = {
     draw: function(){console.log(`${this.firstName} is drawing...`)}
 }
 person2.draw();
+
+// Constructor = special method for defining the properties and methods of objects
+function Car(make,model,year,color){
+    this.make = make,
+    this.model = model,
+    this.year = year,
+    this.color = color
+}
+
+const car1 = new Car("Porsche","911",2026,"white")
+console.log(car1.make);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.color);
+
+// class = (ES6 feature) provides a more structured and cleaner way to work with objects.
+
+class Product{
+    constructor(name,price){
+        this.name = name,
+        this.price = price 
+    }
+    display(){
+        console.log(`Product: ${this.name}, Price: $${this.price}`);
+    }
+}
+
+const product1 = new Product("Laptop",999);
+product1.display();
+
+// Static methods = methods that belong to the class itself, not to instances of the class
+class MathUtils{
+    static PI = 3.14159;
+}
+console.log(MathUtils.PI);  // can access static property without creating an instance of the class
+
+class User{
+    static userCount = 0;
+    constructor(name){
+        this.name = name;
+        User.userCount++;
+    }
+}
+const user1 = new User("Bluffy")
+console.log(user1.name)
+console.log(user1.userCount)  // undefined, static properties are accessed through the class, not instances
+console.log(User.userCount)  
